@@ -1,4 +1,4 @@
-# CobbleSpawnAlert Reforged
+# LoxyCraft
 
 Choose your language / Choisissez votre langue
 
