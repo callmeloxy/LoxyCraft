@@ -1,4 +1,20 @@
+# LoxyCraft
 
+Utility content mod adding compressed blocks, custom materials, and quality-of-life recipes for Minecraft.
+
+## Overview
+
+LoxyCraft is a utility mod designed to add useful blocks, custom materials, and practical crafting content with a strong focus on compressed resources and vanilla-friendly quality-of-life additions.
+
+## Features
+
+- Large compressed block system
+- Custom utility blocks and materials
+- Vanilla-friendly quality-of-life recipes
+- Optional Cobblemon-related recipes when supported
+- Custom creative tab
+- Support for Minecraft `1.21.1`
+- Development targeting `Fabric`
 
 ## Public Repository Purpose
 
