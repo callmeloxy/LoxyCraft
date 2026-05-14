@@ -7,9 +7,9 @@ Choose your language / Choisissez votre langue
 
 ## Quick Links / Liens rapides
 
-- [Issues]()
-- [Changelog Fabric]()
-- [Changelog Neoforge]()
+- [Issues](https://github.com/callmeloxy/LoxyCraft/issues)
+- [Changelog Fabric](https://github.com/callmeloxy/LoxyCraft/blob/main/fabric/CHANGELOG.md)
+- [Changelog Neoforge]() WIP
 - [Discord](https://discord.gg/NsNGDKxrYr)
 
 ## Important
