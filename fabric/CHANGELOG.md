@@ -1,5 +1,59 @@
 # Changelog
 
+## 1.1.0
+
+### Summary
+
+This update expands LoxyCraft with new compressed blocks, additional natural rock support, advanced crafting recipes, and a complete Nether Star progression chain.
+
+### Fixed
+
+- Fixed the Master Ball recipe layout to match the intended pattern
+- Fixed missing creative tab entries for newly added compressed blocks
+- Fixed missing or incomplete translations for new compressed blocks
+- Fixed tool tags and loot tables for newly added compressed rock blocks
+
+### Added
+
+- Added compressed Bone Blocks from x1 to x9
+- Added compressed Soul Sand Blocks from x1 to x9
+- Added compressed Soul Soil Blocks from x1 to x9
+- Added compressed Deepslate Blocks from x1 to x9
+- Added compressed Cobbled Deepslate Blocks from x1 to x9
+- Added compressed Tuff Blocks from x1 to x9
+- Added compressed Calcite Blocks from x1 to x9
+- Added compressed Dripstone Blocks from x1 to x9
+- Added compressed Netherrack Blocks from x1 to x9
+- Added compressed Basalt Blocks from x1 to x9
+- Added compressed Blackstone Blocks from x1 to x9
+- Added compressed End Stone Blocks from x1 to x9
+- Added compression and decompression recipes for all new compressed blocks
+- Added textures, models, blockstates, loot tables, tool tags, and translations for the new compressed blocks
+- Added a craft for Echo Shards
+- Added a craft for Wither Skeleton Skulls
+- Added a craft for Nether Stars
+- Added a conditional Cobblemon craft for Master Balls
+
+### Changed
+
+- Changed LoxyCraft’s compressed block system to cover more natural Overworld, Nether, and End rocks
+- Changed Master Ball crafting so it now uses Nether Star Block Core as a premium component
+- Changed Nether Star crafting so it now has a dedicated progression chain using Echo Shards, Wither Skeleton Skulls, Blaze Rods, and Netherite
+
+### Improved
+
+- Improved the usefulness of Nether Star Block Core as an advanced crafting component
+- Improved storage support for natural rock blocks through additional compressed variants
+- Improved consistency between compressed block families, recipes, loot tables, and mining behavior
+- Improved French naming consistency:
+  - Cobblestone compressed blocks use `Pierre`
+  - Stone compressed blocks use `Roche`
+
+### Notes
+
+- The Master Ball recipe only loads when Cobblemon is installed
+- Nether Star Infusion is planned for a future 1.2.0 update
+
 ## 1.0.0
 
 ### Summary
