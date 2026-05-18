@@ -36,7 +36,7 @@ This repository does **not** contain the source code.
 
 If you would like to host a server for CobbleSpawnAlert Reforged while supporting the project, you can use this BisectHosting partner link:
 
-- [BisectHosting](https://url-shortener.curseforge.com/UH5hL)
+- [BisectHosting](https://url-shortener.curseforge.com/g7ZsH)
 
 ## Downloads
 
