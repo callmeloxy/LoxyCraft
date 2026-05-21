@@ -1,5 +1,53 @@
 # Changelog
 
+## 1.2.0
+
+### Summary
+
+This update adds the Nether Star Infusion system, allowing selected Netherite armor, tools, and weapons to grant one refreshed potion effect while equipped or held.
+
+### Added
+
+- Added Nether Star Infusion
+- Added 10 Infusion Cores:
+  - Night Vision Infusion Core
+  - Water Breathing Infusion Core
+  - Resistance Infusion Core
+  - Fire Resistance Infusion Core
+  - Speed Infusion Core
+  - Slow Falling Infusion Core
+  - Jump Boost Infusion Core
+  - Strength Infusion Core
+  - Haste Infusion Core
+  - Luck Infusion Core
+- Added shapeless recipes for all Infusion Cores using Nether Star Block Core and a matching catalyst item
+- Added anvil infusion support for Netherite equipment
+- Added refreshed potion effects while infused armor is equipped
+- Added refreshed potion effects while infused tools or weapons are held in the main hand
+- Added dedicated textures, item models, and translations for all Infusion Cores
+- Added tooltips for infused items
+
+### Changed
+
+- Changed Nether Star Block Core so it is now used as the base component for creating Infusion Cores
+- Changed tool and weapon infusion behavior so effects only activate from the main hand
+- Changed infusion scope so it is limited to Netherite armor, tools, and weapons
+
+### Improved
+
+- Improved Nether Star Block Core usefulness with a new late-game upgrade path
+- Improved progression around Nether Star crafting and advanced equipment upgrades
+- Improved visual clarity for Infusion Cores with distinct colors and symbols
+
+### Notes
+
+- Each item can only have one infusion effect
+- Already infused items cannot be infused again
+- Infused armor effects are active only while equipped
+- Infused tool and weapon effects are active only while held in the main hand
+- Potion effect icons remain visible, but particles are hidden
+- On Arkensia, Master Ball crafting requires `cobblemon:master_ball` to be removed from Item Obliterator’s `only_disable_recipes` list
+
 ## 1.1.0
 
 ### Summary
