@@ -1,5 +1,51 @@
 # Changelog
 
+## 1.3.0
+
+### Summary
+
+This update greatly expands LoxyCraft’s compressed block system with new families useful for storage, advanced crafting, and late-game progression.
+
+### Fixed
+
+- Fixed the texture of compressed Prismarine blocks
+- Fixed compressed Prismarine rendering by using only the first 16x16 frame of the vanilla animated Prismarine texture before applying the compression overlay
+- Fixed the visual issue that caused a strange double-color effect on compressed Prismarine
+
+### Added
+
+- Added compressed Nether Star Blocks from x1 to x9
+- Added compressed Ender Pearl Blocks from x1 to x9
+- Added compressed Blaze Rod Blocks from x1 to x9
+- Added compressed Echo Shard Blocks from x1 to x9
+- Added compressed Obsidian Blocks from x1 to x9
+- Added compressed Amethyst Blocks from x1 to x9
+- Added compressed Prismarine Blocks from x1 to x9
+- Added compressed Dark Prismarine Blocks from x1 to x9
+- Added compressed Blue Ice Blocks from x1 to x9
+- Added compressed Bamboo Blocks from x1 to x9
+- Added compression recipes for all new block families
+- Added reverse decompression recipes for all new block families
+- Added loot tables so all new blocks can be recovered correctly
+- Added models, blockstates, FR / EN translations, and textures for all new blocks
+- Added all new blocks to the LoxyCraft creative tab
+
+### Improved
+
+- Improved premium resource progression by giving Nether Star, Ender Pearl, Blaze Rod, and Echo Shard blocks a full compression chain up to x9
+- Improved storage options for useful modpack resources with the new compressed block families
+- Improved future advanced crafting support by making compressed blocks a cleaner base for upcoming recipes
+- Improved required tool handling depending on block family:
+  - diamond or netherite pickaxe for premium blocks such as Nether Star and Obsidian
+  - pickaxe for mineral and crystalline blocks
+  - axe for compressed Bamboo blocks
+
+### Notes
+
+- Compressed blocks from x1 to x9 use the standard compression logic: 9 blocks of the previous level craft the next level
+- Each level can be decompressed back into 9 blocks of the previous level
+- No other compressed block families are planned for now in order to avoid unnecessary bloat
+
 ## 1.2.0
 
 ### Summary
