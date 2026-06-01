@@ -1,5 +1,40 @@
 # Changelog
 
+## 1.4.0
+
+### Summary
+
+This update adds a new late-game upgrade to LoxyCraft’s infusion system: the **Unbreakable** infusion, allowing compatible Netherite equipment to become unbreakable through a dedicated new core.
+
+### Fixed
+
+- Fixed multiple application of the Unbreakable infusion on the same item
+- Fixed Unbreakable infusion application on incompatible items
+
+### Added
+
+- Added the **Unbreakable Infusion Core**
+- Added a recipe for the Unbreakable Infusion Core:
+  - Nether Star Block Core + Nether Star
+- Added Unbreakable infusion support through the anvil
+- Added support for making compatible Netherite equipment unbreakable
+- Added a dedicated tooltip for items made unbreakable
+- Added a dedicated texture for the Unbreakable Infusion Core
+
+### Improved
+
+- Improved Nether Star Block Core usefulness with a new late-game purpose
+- Improved infusion flexibility by making the Unbreakable infusion compatible with existing effect infusions
+- Improved upgrade combinations so one item can now have both an effect infusion and the Unbreakable upgrade
+- Improved infusion workflow so the Unbreakable infusion can be applied before or after an effect infusion
+
+### Notes
+
+- The Unbreakable infusion is limited to Netherite armor, tools, and weapons
+- The Unbreakable infusion does not replace effect infusions
+- The Unbreakable infusion has no level: an item is either unbreakable or it is not
+- The next planned update is 1.5.0, focused on configurable infusion levels
+
 ## 1.3.0
 
 ### Summary
