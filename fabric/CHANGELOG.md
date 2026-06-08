@@ -1,5 +1,75 @@
 # Changelog
 
+## 1.5.0
+
+### Summary
+
+This update improves LoxyCraft’s infusion system with configurable infusion levels, a dedicated server configuration, and a reload command to adjust settings without restarting.
+
+### Fixed
+
+- Fixed the client tooltip so infusion levels now display correctly
+- Fixed config behavior to prevent infusion levels above V
+- Fixed anvil behavior so unauthorized level upgrades are refused
+- Fixed anvil behavior so a different core cannot be applied to an already infused item
+
+### Added
+
+- Added a level system for compatible infusions
+- Added support for upgrading an existing infusion in the anvil using the same Infusion Core
+- Added support for infusion levels from I to V
+- Added a configurable maximum level limit
+- Added an internal hard cap at level V
+- Added a dedicated config file:
+  - `config/LoxyCraft/loxycraft.json`
+- Added the `itemUpgrades` config section
+- Added the ability to disable new item upgrades entirely
+- Added the `infusionLevels` config section
+- Added the ability to enable or disable only level upgrades
+- Added a configurable XP cost for level upgrades
+- Added the command:
+  - `/loxycraft reload`
+
+### Changed
+
+- Changed the following effects so they can now scale with levels:
+  - Resistance
+  - Speed
+  - Jump Boost
+  - Strength
+  - Haste
+  - Luck
+- Changed the following effects so they intentionally remain non-scaling:
+  - Night Vision
+  - Water Breathing
+  - Fire Resistance
+  - Slow Falling
+  - Unbreakable
+- Changed Unbreakable so it remains separate from the level system
+- Changed Unbreakable so it remains compatible with one effect infusion
+
+### Improved
+
+- Improved compatible infusions so they can now progress beyond level I
+- Improved server-side control over infusion levels
+- Improved admin control by allowing infusion levels to be limited to the desired maximum
+- Improved admin flexibility by allowing item upgrades to be disabled without deleting already infused items
+- Improved configuration workflow with `/loxycraft reload`, allowing config reloads without restarting the game or server
+- Improved tooltips so they now show levels for compatible infusions
+- Improved already infused item behavior so they now automatically respect the configured level cap
+- Improved effect limiting so when the maximum level is reduced, applied effects are capped to the new allowed maximum
+- Improved fallback behavior so when levels are disabled, existing infusions are treated as level I
+
+### Notes
+
+- `itemUpgrades.enabled = false` blocks creation of new infusions and item upgrades in the anvil
+- Already infused items are not removed when upgrades are disabled
+- `infusionLevels.enabled = false` only blocks level upgrades
+- A base infusion remains possible if `itemUpgrades.enabled = true`
+- `maxLevel` cannot exceed 5
+- Non-sensical levels such as Night Vision V or Fire Resistance V are intentionally refused
+- A future update may add a system to reset or remove infusions
+
 ## 1.4.0
 
 ### Summary
