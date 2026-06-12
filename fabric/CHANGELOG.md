@@ -1,5 +1,64 @@
 # Changelog
 
+## 1.6.0
+
+### Summary
+
+This update adds an equipment recycling system and improves infusion handling with two new tools: the **Infusion Extractor** and the **Equipment Recycling Core**.
+
+### Fixed
+
+- Fixed material recycling so it no longer uses the anvil
+- Fixed material recycling so it no longer costs XP
+- Fixed the Equipment Recycling Core so it is no longer used for material recycling and is now dedicated to enchantment extraction
+- Fixed material recycling so items with normal enchantments are rejected
+- Fixed material recycling so items with only curses can still be recycled
+- Fixed material recycling so infused items are rejected by default
+- Fixed material recycling so Unbreakable items are rejected by default
+
+### Added
+
+- Added the **Infusion Extractor**
+- Added the **Equipment Recycling Core**
+- Added diamond equipment recycling in the crafting table
+- Added Netherite equipment recycling in the crafting table
+- Added a material return system based on the remaining durability of the item
+- Added infusion extraction through the anvil
+- Added enchantment extraction through the anvil
+- Added new config options for recycling and infusion management
+- Added `/loxycraft reload` support for the new config options
+
+### Improved
+
+- Improved equipment recycling so it now happens directly in the crafting table, without XP and without any extra item
+- Improved diamond equipment recycling so it now returns diamonds based on item condition
+- Improved Netherite equipment recycling so it now returns Netherite Scraps based on item condition
+- Improved recycling output clarity with defined return tiers:
+  - 100% durability: maximum return
+  - 99% to 75%: one step lower
+  - 74% to 50%: two steps lower
+  - 49% to 25%: three steps lower
+  - 24% to 1%: four steps lower
+  - 0%: no return
+- Improved infusion management by allowing the Infusion Extractor to remove an effect infusion without destroying the item
+- Improved Unbreakable handling so the Infusion Extractor does not remove the Unbreakable upgrade
+- Improved enchantment recovery by allowing the Equipment Recycling Core to extract normal enchantments from an item
+- Improved enchantment output so extracted enchantments are returned as an enchanted book
+- Improved curse handling so curses stay on the original item during enchantment extraction
+- Improved overflow handling so the extracted enchanted book drops on the ground if the inventory is full
+
+### Notes
+
+- Equipment recycling only works for diamond and Netherite armor, tools, and weapons
+- Iron and gold equipment are intentionally excluded because Minecraft already supports their recycling through smelting
+- Crafting-table recycling does not require any XP
+- Infusion extraction remains an anvil action with a configurable cost
+- Enchantment extraction remains an anvil action with a configurable cost
+- The system is configurable in:
+  - `config/LoxyCraft/loxycraft.json`
+- The new options can be reloaded with:
+  - `/loxycraft reload`
+
 ## 1.5.0
 
 ### Summary
