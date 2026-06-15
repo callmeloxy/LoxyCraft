@@ -1,5 +1,72 @@
 # Changelog
 
+## 1.7.0
+
+### Summary
+
+This update improves the infusion system with support for compatible multi-infusions, configurable Infusion Extractor behavior, and automatically generated configuration comment files.
+
+### Fixed
+
+- Fixed legacy items using the old `loxycraft_infusion` format so they are still recognized correctly
+- Fixed new infusions so they now use the internal `loxycraft_infusions` format
+- Fixed tooltips so they now display multiple infusions correctly on the same item
+- Fixed the Infusion Extractor so it still does not remove the Unbreakable upgrade
+- Fixed `CONFIG_COMMENTS_FR.txt` and `CONFIG_COMMENTS_EN.txt` so they are now actually generated in the config folder
+
+### Added
+
+- Added support for compatible multi-infusions on certain equipment
+- Added a new internal storage format to handle multiple infusions on the same item
+- Added compatibility with older already-infused items
+- Added display support for multiple infusions in tooltips
+- Added support for keeping a different level for each infusion
+- Added the `infusionManagement.extractMode` config option
+- Added extraction modes:
+  - `ALL`
+  - `FIRST`
+  - `LAST`
+- Added automatically generated config comment files:
+  - `config/LoxyCraft/CONFIG_COMMENTS_FR.txt`
+  - `config/LoxyCraft/CONFIG_COMMENTS_EN.txt`
+
+### Changed
+
+- Changed the allowed multi-infusion combinations to:
+  - Helmet: Night Vision + Water Breathing
+  - Chestplate: Resistance + Fire Resistance
+  - Boots: Slow Falling + Jump Boost
+  - Axe: Haste + Strength
+  - Hoe: Haste + Luck
+- Changed the following items so they remain limited to a single infusion:
+  - Leggings: Speed only
+  - Sword: Strength only
+  - Pickaxe: Haste only
+  - Shovel: Haste only
+- Changed `extractMode = ALL` so it removes all effect infusions
+- Changed `extractMode = FIRST` so it removes the first infusion according to the mod’s internal order
+- Changed `extractMode = LAST` so it removes the last infusion according to the mod’s internal order
+
+### Improved
+
+- Improved some items so they can now receive two compatible infusions
+- Improved infusion flexibility so compatible infusions can be applied in any order
+- Improved upgrade handling so an existing infusion can still be upgraded with the same Infusion Core
+- Improved Unbreakable handling so it remains separate from effect infusions
+- Improved the Infusion Extractor so it can now remove all infusions or only part of them depending on the config
+- Improved configuration readability with comment files explaining the main `loxycraft.json` options
+- Improved config setup so comment files are copied automatically into `config/LoxyCraft/`
+
+### Notes
+
+- Multi-infusion is not unrestricted: only explicitly allowed combinations work
+- Incompatible combinations are refused in the anvil
+- Each infusion keeps its own level
+- The Unbreakable upgrade remains compatible with effect infusions
+- The comment files do not replace `loxycraft.json`; they are only reading helpers
+- Config changes can be reloaded with:
+  - `/loxycraft reload`
+
 ## 1.6.0
 
 ### Summary
