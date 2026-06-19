@@ -1,5 +1,58 @@
 # Changelog
 
+## 1.8.0
+
+### Summary
+
+This update adds a set of recycling recipes for wooden components, making it easier to recover planks from crafted blocks made by mistake or in excess.
+
+### Added
+
+- Added recycling recipes for wooden slabs
+- Added recycling recipes for wooden stairs
+- Added recycling recipes for wooden trapdoors
+- Added recycling recipes for wooden doors
+- Added recycling recipes for wooden pressure plates
+- Added recycling recipes for Bamboo Mosaic slabs
+
+### Improved
+
+- Improved wooden slab recycling:
+  - 2 slabs -> 1 plank
+- Improved wooden stair recycling:
+  - 2 stairs -> 3 planks
+- Improved wooden trapdoor recycling:
+  - 1 trapdoor -> 3 planks
+- Improved wooden door recycling:
+  - 1 door -> 2 planks
+- Improved wooden pressure plate recycling:
+  - 1 pressure plate -> 2 planks
+- Improved Bamboo Mosaic slab recycling:
+  - 2 Bamboo Mosaic slabs -> 1 Bamboo Mosaic block
+
+### Notes
+
+- Recipes cover the vanilla wood families available in Minecraft 1.21.1:
+  - Oak
+  - Spruce
+  - Birch
+  - Jungle
+  - Acacia
+  - Dark Oak
+  - Mangrove
+  - Cherry
+  - Bamboo
+  - Crimson
+  - Warped
+- Pale Oak is not included because it does not exist in Minecraft 1.21.1
+- This update is recipes-only:
+  - no Java changes
+  - no new config
+  - no new item
+  - no new block
+  - no texture changes
+- Stone-based recycling variants are intentionally kept for a future dedicated update
+
 ## 1.7.0
 
 ### Summary
