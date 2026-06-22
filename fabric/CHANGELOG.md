@@ -1,5 +1,79 @@
 # Changelog
 
+## 1.9.0
+
+### Summary
+
+This update adds a new wave of recycling recipes for stone, rock, and mineral-based building blocks, making it easier to recover the original blocks from excess slabs, stairs, and walls.
+
+### Added
+
+- Added recycling recipes for stone and rock slabs
+- Added recycling recipes for stone and rock stairs
+- Added recycling recipes for stone and rock walls
+- Added recycling recipes for the following families:
+  - Stone
+  - Cobblestone
+  - Mossy Cobblestone
+  - Smooth Stone
+  - Stone Bricks
+  - Mossy Stone Bricks
+  - Bricks
+  - Mud Bricks
+  - Granite
+  - Polished Granite
+  - Diorite
+  - Polished Diorite
+  - Andesite
+  - Polished Andesite
+  - Cobbled Deepslate
+  - Polished Deepslate
+  - Deepslate Bricks
+  - Deepslate Tiles
+  - Tuff
+  - Polished Tuff
+  - Tuff Bricks
+  - Sandstone
+  - Smooth Sandstone
+  - Cut Sandstone
+  - Red Sandstone
+  - Smooth Red Sandstone
+  - Cut Red Sandstone
+  - Prismarine
+  - Prismarine Bricks
+  - Dark Prismarine
+  - Nether Bricks
+  - Red Nether Bricks
+  - Blackstone
+  - Polished Blackstone
+  - Polished Blackstone Bricks
+  - End Stone Bricks
+  - Purpur
+  - Quartz
+  - Smooth Quartz
+
+### Improved
+
+- Improved stone and rock slab recycling:
+  - 2 slabs -> 1 block
+- Improved stone and rock stair recycling:
+  - 2 stairs -> 3 blocks
+- Improved stone and rock wall recycling:
+  - 1 wall -> 1 block
+- Improved LoxyCraft’s recycling system so it now also covers stone and rock variants in addition to wood
+- Improved recipe consistency by following vanilla crafting ratios whenever possible
+
+### Notes
+
+- This update is recipes-only:
+  - no Java changes
+  - no new config
+  - no new item
+  - no new block
+  - no texture changes
+- Recipes do not create invented conversions for blocks that do not have vanilla slab, stair, or wall variants
+- The goal is to reduce losses when players craft too many building variants by mistake
+
 ## 1.8.0
 
 ### Summary
