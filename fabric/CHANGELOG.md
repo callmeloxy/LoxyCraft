@@ -1,5 +1,47 @@
 # Changelog
 
+## 1.10.0
+
+### Summary
+
+LoxyCraft 1.10.0 adds Netherite Scrap compression blocks and introduces a new Flight Infusion Core, while also fixing several tool tag and infusion behavior issues.
+
+### Fixed
+
+- Fixed tool and pickaxe tags on several blocks
+- Fixed compressed Quartz blocks not dropping correctly when mined with a valid pickaxe
+- Fixed Resistance infusion stacking beyond Resistance I
+- Fixed duplicated Resistance applications being able to increase the effect level
+- Fixed Creative Flight behavior after death and respawn
+
+### Added
+
+- Added Netherite Scrap Block
+- Added Compressed Netherite Scrap Blocks from x1 to x9
+- Added Flight Infusion Core
+- Added Creative Flight infusion for chest-slot equipment
+- Added creative flight support on Netherite Chestplates
+- Added creative flight support on Elytra
+- Added fall damage protection while wearing chest-slot equipment with the Creative Flight infusion
+- Added Elytra compatibility for chest-slot infusions:
+  - Resistance
+  - Fire Resistance
+  - Creative Flight
+  - Unbreakable
+
+### Improved
+
+- Improved chest-slot infusion compatibility between Netherite Chestplates and Elytra
+- Improved infusion handling to keep multiple chest infusions compatible on the same item
+- Improved Creative Flight behavior when equipping or removing infused chest-slot equipment
+
+### Notes
+
+- Resistance is now limited to Resistance I
+- Creative Flight only works while the infused chest-slot item is equipped
+- Removing the infused chest-slot item disables creative flight normally
+- Fall damage protection only applies while the Creative Flight infusion is active
+
 ## 1.9.0
 
 ### Summary
