@@ -1,5 +1,73 @@
 # Changelog
 
+## 1.11.0
+
+### Summary
+
+LoxyCraft 1.11.0 adds the Enchantment Recycler, a dedicated machine for extracting enchantments into separate books, and introduces four progressive Item Attractor tiers with configurable ranges, controls, pickup behavior, and Trinkets support.
+
+### Added
+
+* Added the Enchantment Recycler
+
+  * Extracts enchantments individually into separate enchanted books
+  * Requires one Book and one Equipment Recycling Core per extracted enchantment
+  * Preserves the original item
+  * Keeps curses on the original item because they cannot be extracted
+  * Does not consume materials when the player inventory is full
+  * Allows Creative players to use the machine without materials
+  * Includes custom Information and Machine Status panels
+* Added four Item Attractor tiers:
+
+  * Item Attractor — 8-block range
+  * Enhanced Item Attractor — 16-block range
+  * Ascended Item Attractor — 24-block range
+  * Singularity Item Attractor — 32-block range
+* Added progressive crafting recipes where each higher-tier Item Attractor requires the previous tier
+* Added configurable Item Attractor ranges
+* Added a configurable Item Attractor detection interval
+* Added a configurable keybind to enable or disable Item Attractors
+* Added a configurable keybind to allow or ignore items belonging to other players
+* Added configurable instant pickup, toggled with `Shift + Right-click`
+* Added an enchantment glint while an Item Attractor is active
+* Added distinct activation and deactivation sounds
+* Added dynamic Item Attractor tooltips displaying:
+
+  * personal flavor text
+  * attraction range
+  * other players’ item behavior
+  * instant pickup status
+* Added Trinkets compatibility:
+
+  * dedicated Item Attractor slot
+  * Item Attractors can only be equipped in their dedicated Trinkets slot
+  * equipped Item Attractors can be enabled, disabled, and used normally
+
+### Changed
+
+* Changed Item Attractor activation so an attractor must be present in the player inventory or equipped in the dedicated Trinkets slot
+* Changed active range selection so the highest-tier Item Attractor carried or equipped determines the attraction range
+* Changed item collection behavior so pickup delay is ignored while instant pickup is enabled
+* Changed ownership handling so servers can prevent players from collecting items belonging to other players
+
+### Improved
+
+* Improved enchantment extraction by separating each enchantment into its own enchanted book
+* Improved extraction safety by preserving materials when the output cannot fit in the player inventory
+* Improved Item Attractor progression with four distinct range tiers
+* Improved player control with separate toggles for activation, ownership handling, and instant pickup
+* Improved Item Attractor readability with dynamic technical and personal tooltip information
+* Improved equipment integration through a dedicated Trinkets slot
+
+### Notes
+
+* Each extracted enchantment requires one Book and one Equipment Recycling Core
+* Curses cannot be extracted and remain on the original item
+* The Enchantment Recycler preserves the original item
+* The highest-tier Item Attractor available to the player determines the active range
+* Item Attractors only work while a valid attractor is carried or equipped
+* Item Attractor ranges and detection intervals can be adjusted through the configuration
+
 ## 1.10.1
 
 ### Summary
@@ -45,8 +113,8 @@ LoxyCraft 1.10.0 adds Netherite Scrap compression blocks and introduces a new Fl
 * Added Compressed Netherite Scrap Blocks from x1 to x9
 * Added Flight Infusion Core
 * Added Creative Flight infusion for chest-slot equipment
-* Added creative flight support on Netherite Chestplates
-* Added creative flight support on Elytra
+* Added Creative Flight support on Netherite Chestplates
+* Added Creative Flight support on Elytra
 * Added fall damage protection while wearing chest-slot equipment with the Creative Flight infusion
 * Added Elytra compatibility for chest-slot infusions:
 
@@ -65,7 +133,7 @@ LoxyCraft 1.10.0 adds Netherite Scrap compression blocks and introduces a new Fl
 
 * Resistance is now limited to Resistance I
 * Creative Flight only works while the infused chest-slot item is equipped
-* Removing the infused chest-slot item disables creative flight normally
+* Removing the infused chest-slot item disables Creative Flight normally
 * Fall damage protection only applies while the Creative Flight infusion is active
 
 ## 1.9.0
@@ -125,13 +193,13 @@ This update adds a new wave of recycling recipes for stone, rock, and mineral-ba
 
 * Improved stone and rock slab recycling:
 
-  * 2 slabs -> 1 block
+  * 2 slabs → 1 block
 * Improved stone and rock stair recycling:
 
-  * 2 stairs -> 3 blocks
+  * 2 stairs → 3 blocks
 * Improved stone and rock wall recycling:
 
-  * 1 wall -> 1 block
+  * 1 wall → 1 block
 * Improved LoxyCraft’s recycling system so it now also covers stone and rock variants in addition to wood
 * Improved recipe consistency by following vanilla crafting ratios whenever possible
 
@@ -166,22 +234,22 @@ This update adds a set of recycling recipes for wooden components, making it eas
 
 * Improved wooden slab recycling:
 
-  * 2 slabs -> 1 plank
+  * 2 slabs → 1 plank
 * Improved wooden stair recycling:
 
-  * 2 stairs -> 3 planks
+  * 2 stairs → 3 planks
 * Improved wooden trapdoor recycling:
 
-  * 1 trapdoor -> 3 planks
+  * 1 trapdoor → 3 planks
 * Improved wooden door recycling:
 
-  * 1 door -> 2 planks
+  * 1 door → 2 planks
 * Improved wooden pressure plate recycling:
 
-  * 1 pressure plate -> 2 planks
+  * 1 pressure plate → 2 planks
 * Improved Bamboo Mosaic slab recycling:
 
-  * 2 Bamboo Mosaic slabs -> 1 Bamboo Mosaic block
+  * 2 Bamboo Mosaic slabs → 1 Bamboo Mosaic block
 
 ### Notes
 
@@ -489,9 +557,9 @@ This update greatly expands LoxyCraft’s compressed block system with new famil
 * Improved future advanced crafting support by making compressed blocks a cleaner base for upcoming recipes
 * Improved required tool handling depending on block family:
 
-  * diamond or netherite pickaxe for premium blocks such as Nether Star and Obsidian
-  * pickaxe for mineral and crystalline blocks
-  * axe for compressed Bamboo blocks
+  * Diamond or Netherite Pickaxe for premium blocks such as Nether Star and Obsidian
+  * Pickaxe for mineral and crystalline blocks
+  * Axe for compressed Bamboo blocks
 
 ### Notes
 
@@ -678,11 +746,11 @@ This update expands LoxyCraft with a full compressed block system, new utility b
 * Improved Glowstone compressed blocks with light emission
 * Improved mining behavior:
 
-  * Dirt, Grass, Gravel, Sand, and Clay can be mined by hand and are faster with a shovel
-  * Coal requires a pickaxe
-  * Iron, Lapis, Copper, Stone, Cobblestone, Quartz, Granite, Diorite, and Andesite require at least a stone pickaxe
-  * Gold, Redstone, Diamond, and Emerald require at least an iron pickaxe
-  * Netherite requires at least a diamond pickaxe
+  * Dirt, Grass, Gravel, Sand, and Clay can be mined by hand and are faster with a Shovel
+  * Coal requires a Pickaxe
+  * Iron, Lapis, Copper, Stone, Cobblestone, Quartz, Granite, Diorite, and Andesite require at least a Stone Pickaxe
+  * Gold, Redstone, Diamond, and Emerald require at least an Iron Pickaxe
+  * Netherite requires at least a Diamond Pickaxe
 * Improved durability balance by using `strength(1.5f)` for compressed blocks
 
 ### Notes
